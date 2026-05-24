@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Heebo:wght@100..900&f
+    amily=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200
+    ..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100
+    ..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="MainBody">
+        <div class="Header">
+            <h2>ToDo List</h2>
+        </div>
+
+        <div class="addTask">
+            <input type="text" placeholder="Add New Task" class="input">
+
+            <button class="Add">Add Task</button>
+        </div>
+
+        <div class="taskList">
+            <ul class="list">
+                <!-- <li>Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const Input = document.querySelector(".input");
+
+        const Button = document.querySelector(".Add");
+
+        const List = document.querySelector(".list");
+
+        function addTask (event) {
+            event.preventDefault();
+
+            const taskValue = Input.value;
+
+            const newList = document.createElement("li");
+
+            newList.textContent = taskValue;
+
+            List.appendChild(newList);
+
+            Input.value = "";
+        }
+
+        Button.addEventListener('click', addTask);
+    </script>
+</body>
+</html>

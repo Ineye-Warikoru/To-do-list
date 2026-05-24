@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #01B7AF;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+div.MainBody{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px 30px 20px 30px;
+    gap: 30px;
+    box-shadow: 20px 20px 20px black;
+}
+
+.Header h2{
+    font-family: 'Roboto';
+    color: #01B7AF;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.addTask{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px, 0px, 0px, 30px;
+    border-radius: 30px;
+}
+
+.addTask input{
+    border-right: none;
+    height: 50px;
+    width: 500px;
+    border-radius: 30px 0px 0px 30px;
+    padding-left: 30px;
+}
+
+.addTask button{
+    background-image: linear-gradient(to right, #01B7AF, #00CBAD);
+    border-left: none;
+    height: 50px;
+    width: 100px;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 700;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.addTask input::placeholder{
+    font-family: 'Roboto';
+    font-weight: 900;
+    color: gray;
+    margin-left: 20px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+li{
+    background-color: aqua;
+    width: 600px;
+    height: 50px;
+    padding: 15px 0px 0px 30px;
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 20px;
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
